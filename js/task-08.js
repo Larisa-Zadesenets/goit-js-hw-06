@@ -1,21 +1,21 @@
-const rightEmail = "";
-const rightPassword = "";
 
-const loginForm = document.querySelector(".form");
+const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-    const emailValue = formElements.email.value;
-    const passwordValue = formElements.password.value;
+    const emailValue = event.currentTarget.elements.email.value;
+    const passwordValue = event.currentTarget.elements.password.value;
 
-    if (emailValue == rightEmail && passwordValue == rightPassword ) {
+    if (emailValue && passwordValue) {
       return console.log ({
-        elementsEmail: rightEmail,
-        elementsPassword: rightPassword,
+        elementsEmail: emailValue,
+        elementsPassword: passwordValue,
       }); 
-    } else if (emailValue === "" || passwordValue === "") {
+    } else if (emailValue == "" || passwordValue == "") {
         alert("Fill up all the forms")
     }
-
 }
+
+
+

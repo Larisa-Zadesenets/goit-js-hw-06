@@ -4,7 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const changeColorEl = document.querySelector(".chenge-color");
+const changeColorEl = document.querySelector(".change-color");
 const textColorEl = document.querySelector(".color");
 
 changeColorEl.addEventListener("click", onChangeColor);
@@ -20,9 +20,5 @@ textColorEl.textContent = document.body.getAttribute(backgroundColor);
 
 
 
-/*function onChangeColor() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  textColorEl.textContent = document.body.style.backgroundColor;
-   
- }*/
+
  
