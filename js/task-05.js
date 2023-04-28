@@ -4,7 +4,7 @@ nameInput.addEventListener ("input", onTextInput);
 
 
 function onTextInput (event) {
-    let name = event.target.value;
+    let name = event.target.value.trim();
     if (name === "") { 
         name = "Anonymous"; } 
      nameOutput.textContent = name; 

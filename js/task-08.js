@@ -12,7 +12,7 @@ function onFormSubmit(event) {
         elementsEmail: emailValue,
         elementsPassword: passwordValue,
       }); 
-    } else if (emailValue == "" || passwordValue == "") {
+    } else if (emailValue === "" || passwordValue === "") {
         alert("Fill up all the forms")
     }
 }
